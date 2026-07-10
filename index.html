@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planora — Planning Made Simple</title>
+  <meta name="description" content="Planora is your all-in-one travel planning app. Find the best places to visit, restaurants, hotels, tours and local gems on the map, read real reviews, plan trips, and stay connected with travel eSIMs. Free on iOS and Android." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Loading Screen -->
+  <div class="loader-screen" id="loaderScreen">
+    <div class="loader-plane">✈️</div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo"> 
+        <span class="logo-icon">✈</span>
+        <span class="logo-text">PLANORA</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#destinations" class="nav-link">Destinations</a>
+        <a href="#how-it-works" class="nav-link">About</a>
+        <a href="#for-business" class="nav-link">For Business</a>
+        <a href="#roadmap" class="nav-link">Roadmap</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#newsletter" class="nav-link">Contact</a>
+      </div>
+      <a href="#download" class="nav-cta">Get the App</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">h
+    <a href="#features" class="mobile-link">Features</a>
+    <a href="#destinations" class="mobile-link">Destinations</a>
+    <a href="#how-it-works" class="mobile-link">About</a>
+    <a href="#for-business" class="mobile-link">For Business</a>
+    <a href="#roadmap" class="mobile-link">Roadmap</a>
+    <a href="#blog" class="mobile-link">Blog</a>
+    <a href="#newsletter" class="mobile-link">Contact</a>
+    <a href="#download" class="mobile-link cta">Get the App</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-tagline">Places · Restaurants · Tours · Travel eSIM</p>
+        <h1 class="hero-title">Discover the best places, wherever you go</h1>
+        <p class="hero-subtitle">Planora is your all-in-one travel planning app for Northeast India. Find the best Assamese restaurants, heritage stays, wildlife sanctuaries and hidden local gems on the map, read real reviews, and stay connected with travel eSIMs — free on iOS and Android.</p>
+        <div class="hero-buttons">
+          <a href="#destinations" class="btn btn-primary">Explore places</a>
+          <a href="#download" class="btn btn-outline">Get the app</a>
+        </div>
+        <p class="hero-rating">
+          <span class="stars">★★★★★</span> Loved by thousands of travelers across India
+        </p>
+        <div class="download-badges" id="download">
+          <p class="download-label">Download Planora</p>
+          <div class="badge-row">
+            <a href="#" class="store-badge" aria-label="Download on App Store">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="badge-icon"><path d="M16.52 12.57c.03 3.15 2.76 4.2 2.79 4.21-.02.07-.44 1.52-1.46 3.01-.88 1.28-1.79 2.56-3.23 2.59-1.42.03-1.88-.84-3.51-.84s-2.14.81-3.48.87c-1.39.05-2.45-1.4-3.34-2.67C2.47 17.1 1 13.11 2.89 9.83c.94-1.63 2.62-2.67 4.45-2.7 1.39-.03 2.71.93 3.51.93.81 0 2.32-1.15 3.9-.98.66.03 2.5.27 3.68 1.99-.1.06-2.19 1.29-2.17 3.5Zm-2.87-7.4c.74-.9 1.24-2.15 1.1-3.4-1.06.04-2.34.71-3.1 1.6-.69.8-1.29 2.06-1.13 3.27 1.18.09 2.38-.6 3.13-1.47Z"/></svg>
+              <span class="badge-text">
+                <span class="badge-small">Download on the</span>
+                <span class="badge-big">App Store</span>
+              </span>
+            </a>
+            <a href="#" class="store-badge" aria-label="Get on Google Play">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="badge-icon"><path d="M3.2 2.3c-.31.32-.5.79-.5 1.38v16.63c0 .59.19 1.06.5 1.38L13 12 3.2 2.3Zm13.03 7.9-2.72-1.56-3.25 3.26 3.24 3.24 2.73-1.55c2.33-1.33 2.33-2.06 0-3.39ZM4.68 1.9l9.51 9.51 2.35-1.34c-2.83-1.61-8.45-4.8-11.86-6.75ZM14.2 12.6l-9.52 9.5c3.42-1.94 9.06-5.13 11.87-6.74l-2.35-1.34Z"/></svg>
+              <span class="badge-text">
+                <span class="badge-small">Get it on</span>
+                <span class="badge-big">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations / Explore by Mood -->
+    <section class="destinations" id="destinations">
+      <div class="section-container">
+        <h2 class="section-title-serif">Explore by mood</h2>
+        <p class="section-subtitle">Filter destination ideas by your vibe and discover what matches your travel style.</p>
+        <div class="mood-filters">
+          <button class="mood-btn active" data-filter="all">All</button>
+          <button class="mood-btn" data-filter="trekking">Trekking &amp; Trails</button>
+          <button class="mood-btn" data-filter="nature">Nature &amp; Outdoors</button>
+          <button class="mood-btn" data-filter="accommodation">Resorts &amp; Stays</button>
+          <button class="mood-btn" data-filter="food">Local Eats &amp; Cafés</button>
+          <button class="mood-btn" data-filter="entertainment">Events &amp; Festivals</button>
+        </div>
+        <div class="places-masonry" id="placesMasonry">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="section-container">
+        <div class="section-header-center">
+          <p class="section-label">How It Works</p>
+          <p class="section-desc">From inspiration to itinerary in minutes</p>
+          <h2 class="section-title-serif">Plan smarter. Travel better.</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal-up">
+            <div class="step-number">1</div>
+            <h3>Pick your vibe</h3>
+            <p>Share your mood, budget, and pace so every recommendation matches how you like to travel.</p>
+            <div class="step-connector"></div>
+            <div class="step-arrow"></div>
+          </article>
+          <article class="step-card reveal-up">
+            <div class="step-number">2</div>
+            <h3>Discover your destination</h3>
+            <p>Get personalized places, hidden gems, and food spots that fit your travel style.</p>
+            <div class="step-connector"></div>
+            <div class="step-arrow"></div>
+          </article>
+          <article class="step-card reveal-up">
+            <div class="step-number">3</div>
+            <h3>Go explore</h3>
+            <p>Follow your saved plan on the go with local tips that keep your trip smooth.</p>
+          </article>
+        </div>
+
+        <div class="features-mini-grid">
+          <article class="feature-mini-card reveal-up">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 22C17.523 22 22 17.523 22 12S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="currentColor" stroke-width="1.7"/><path d="M15.8 8.2 13.7 14.1 7.8 16.2l2.1-5.9 5.9-2.1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Discover Places</h3>
+            <p>Find neighborhoods, landmarks, and lesser-known spots curated for your vibe.</p>
+          </article>
+          <article class="feature-mini-card reveal-up">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 2v8M10 2v8M7 6h3M8.5 10v12M16 2c1.657 0 3 1.343 3 3v5h-4v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Find Restaurants</h3>
+            <p>Skip tourist traps with trusted local picks for quick bites and memorable dinners.</p>
+          </article>
+          <article class="feature-mini-card reveal-up">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v7A2.5 2.5 0 0 1 17.5 15H10l-4.5 4v-4H6.5A2.5 2.5 0 0 1 4 12.5v-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 8h8M8 11h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Get Local Tips</h3>
+            <p>Know what to avoid, when to go, and how to move around like a local.</p>
+          </article>
+        </div>
+
+        <div class="section-cta-center">
+          <a href="#newsletter" class="btn btn-primary">Start Planning Your Trip</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- For Business -->
+    <section class="for-business" id="for-business">
+      <div class="for-business-glow"></div>
+      <div class="section-container relative">
+        <div class="section-header-center">
+          <p class="section-label">For Business Owners</p>
+          <p class="section-desc">Own a place travelers love? Put it on the map.</p>
+          <h2 class="section-title-serif">Claim & manage your place</h2>
+          <p class="section-desc-long">Claiming happens inside the Travely app — here is how to take ownership of your listing in a few simple steps.</p>
+        </div>
+        <div class="business-grid">
+          <article class="business-card reveal-up">
+            <div class="business-card-header">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+              </div>
+              <span class="step-label">Step 1</span>
+            </div>
+            <h3>Get the Planora app</h3>
+            <p>Download Planora for free on iOS or Android and create your account to get started.</p>
+          </article>
+          <article class="business-card reveal-up">
+            <div class="business-card-header">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+              </div>
+              <span class="step-label">Step 2</span>
+            </div>
+            <h3>Find your place</h3>
+            <p>Search for your business by name or browse the map until you open your listing in the app.</p>
+          </article>
+          <article class="business-card reveal-up">
+            <div class="business-card-header">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span class="step-label">Step 3</span>
+            </div>
+            <h3>Tap "Claim this place"</h3>
+            <p>Open your place and tap Claim this place to start the ownership verification process.</p>
+          </article>
+
+          <article class="business-card reveal-up">
+            <div class="business-card-header">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <span class="step-label">Step 4</span>
+            </div>
+            <h3>Verify ownership</h3>
+            <p>Confirm your details and upload proof of ownership. Our team reviews within a few days.</p>
+          </article>
+          <article class="business-card reveal-up">
+            <div class="business-card-header">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>
+              </div>
+              <span class="step-label">Step 5</span>
+            </div>
+            <h3>Manage & get popular</h3>
+            <p>Once verified, update your info, respond to reviews, and grow your reach to become a featured spot.</p>
+          </article>
+        </div>
+        <div class="section-cta-center" style="margin-top: 2.5rem;">
+          <p class="download-label" style="margin-bottom: 1rem;">Start by downloading Planora:</p>
+          <div class="badge-row">
+            <a href="#" class="store-badge"><svg viewBox="0 0 24 24" fill="currentColor" class="badge-icon"><path d="M16.52 12.57c.03 3.15 2.76 4.2 2.79 4.21-.02.07-.44 1.52-1.46 3.01-.88 1.28-1.79 2.56-3.23 2.59-1.42.03-1.88-.84-3.51-.84s-2.14.81-3.48.87c-1.39.05-2.45-1.4-3.34-2.67C2.47 17.1 1 13.11 2.89 9.83c.94-1.63 2.62-2.67 4.45-2.7 1.39-.03 2.71.93 3.51.93.81 0 2.32-1.15 3.9-.98.66.03 2.5.27 3.68 1.99-.1.06-2.19 1.29-2.17 3.5Zm-2.87-7.4c.74-.9 1.24-2.15 1.1-3.4-1.06.04-2.34.71-3.1 1.6-.69.8-1.29 2.06-1.13 3.27 1.18.09 2.38-.6 3.13-1.47Z"/></svg><span class="badge-text"><span class="badge-small">Download on the</span><span class="badge-big">App Store</span></span></a>
+            <a href="#" class="store-badge"><svg viewBox="0 0 24 24" fill="currentColor" class="badge-icon"><path d="M3.2 2.3c-.31.32-.5.79-.5 1.38v16.63c0 .59.19 1.06.5 1.38L13 12 3.2 2.3Zm13.03 7.9-2.72-1.56-3.25 3.26 3.24 3.24 2.73-1.55c2.33-1.33 2.33-2.06 0-3.39ZM4.68 1.9l9.51 9.51 2.35-1.34c-2.83-1.61-8.45-4.8-11.86-6.75ZM14.2 12.6l-9.52 9.5c3.42-1.94 9.06-5.13 11.87-6.74l-2.35-1.34Z"/></svg><span class="badge-text"><span class="badge-small">Get it on</span><span class="badge-big">Google Play</span></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Showcase (Phone Mockups) -->
+    <section class="app-showcase">
+      <div class="app-showcase-glow"></div>
+      <div class="section-container relative">
+        <div class="phone-grid">
+          <div class="phone-frame reveal-up">
+            <div class="phone-bezel">
+              <img src="images/kaziranga.png" alt="Kaziranga Wildlife" loading="lazy" />
+            </div>
+            <p class="phone-label">Kaziranga Wildlife</p>
+          </div>
+          <div class="phone-frame phone-center reveal-up">
+            <div class="phone-bezel">
+              <img src="images/assamese_cuisine.jpg" alt="Assamese Cuisine" loading="lazy" />
+            </div>
+            <p class="phone-label">Assamese Cuisine</p>
+          </div>
+          <div class="phone-frame reveal-up">
+            <div class="phone-bezel">
+              <img src="images/majuli_island.jpg" alt="Majuli Island" loading="lazy" />
+            </div>
+            <p class="phone-label">Majuli Island</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Travel Companion -->
+    <section class="ai-section" id="features">
+      <div class="section-container">
+        <div class="ai-wrapper">
+          <h2 class="section-title-serif">Your AI travel companion.</h2>
+          <div class="ai-grid">
+            <div class="ai-chat">
+              <div class="chat-bubble user">I love nature and local food. Plan 3 days in Assam for me.</div>
+              <div class="chat-bubble ai">
+                <strong>Day 1 — Guwahati</strong><br/>
+                Morning: Visit Kamakhya Temple on Nilachal Hill, then explore Umananda Island on the Brahmaputra.<br/><br/>
+                <strong>Lunch:</strong> Paradise Restaurant — authentic Assamese thali with masor tenga and khar.<br/><br/>
+                <strong>Afternoon:</strong> Stroll through Fancy Bazaar for local silk and handicrafts.<br/><br/>
+                <strong>Dinner:</strong> Khorika — smoky Assamese grilled meats by the riverside.
+              </div>
+              <div class="chat-bubble user">What about a hidden gem restaurant?</div>
+              <div class="chat-bubble ai">
+                Try <strong>Heritage Bamboo Hut</strong> in Tezpur — traditional Assamese dishes served in bamboo vessels with a garden view. Best to visit during lunch for the freshest duck curry!
+              </div>
+            </div>
+            <div class="ai-features-list">
+              <div class="ai-feature-item">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+                <div>
+                  <h4>Smart Itineraries</h4>
+                  <p>AI builds day-by-day plans based on your interests, pace and budget.</p>
+                </div>
+              </div>
+              <div class="ai-feature-item">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.7"/></svg></div>
+                <div>
+                  <h4>Local Knowledge</h4>
+                  <p>Get insider tips that only locals know — from hidden cafés to the best sunset spots.</p>
+                </div>
+              </div>
+              <div class="ai-feature-item">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.7"/><path d="m22 6-10 7L2 6" stroke="currentColor" stroke-width="1.7"/></svg></div>
+                <div>
+                  <h4>Real-time Updates</h4>
+                  <p>Plans adjust on the fly if something's closed, crowded, or the weather changes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- eSIM Section -->
+    <section class="esim-section">
+      <div class="section-container">
+        <div class="section-header-center">
+          <p class="section-label">Travel eSIM</p>
+          <h2 class="section-title-serif">Stay connected, everywhere.</h2>
+          <p class="section-desc">Buy affordable data plans right inside the app. No SIM swaps, no roaming fees — just instant connectivity across all Indian states and UTs.</p>
+        </div>
+        <div class="esim-grid">
+          <div class="esim-card reveal-up">
+            <div class="esim-icon">🇮🇳</div>
+            <h3>All Indian States</h3>
+            <p>Coverage across all states and union territories with reliable local networks.</p>
+          </div>
+          <div class="esim-card reveal-up">
+            <div class="esim-icon">⚡</div>
+            <h3>Instant Setup</h3>
+            <p>Activate your eSIM in under 2 minutes. No physical card needed.</p>
+          </div>
+          <div class="esim-card reveal-up">
+            <div class="esim-icon">💰</div>
+            <h3>Affordable Plans</h3>
+            <p>Save up to 90% compared to traditional prepaid data charges.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="roadmap" id="roadmap">
+      <div class="section-container">
+        <div class="section-header-center">
+          <p class="section-label">Roadmap</p>
+          <h2 class="section-title-serif">What's coming next</h2>
+          <p class="section-desc">We're building Planora in the open. Here's what we're working on.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal-up">
+            <div class="timeline-dot done"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Q1 2025</span>
+              <h3>Launch MVP</h3>
+              <p>Initial release with place discovery, reviews, and maps on iOS & Android.</p>
+              <span class="timeline-status done">Completed</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal-up">
+            <div class="timeline-dot done"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Q2 2025</span>
+              <h3>Travel eSIM Store</h3>
+              <p>In-app eSIM store with instant activation for 190+ countries.</p>
+              <span class="timeline-status done">Completed</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal-up">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Q3 2025</span>
+              <h3>AI Trip Planner</h3>
+              <p>Personalized itinerary builder powered by AI with local insights.</p>
+              <span class="timeline-status active">In Progress</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Q4 2025</span>
+              <h3>Social Features</h3>
+              <p>Follow travelers, share trips, and collaborate on itineraries.</p>
+              <span class="timeline-status">Planned</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2026</span>
+              <h3>Booking Integration</h3>
+              <p>Book restaurants, tours, and accommodations directly inside Travely.</p>
+              <span class="timeline-status">Planned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog" id="blog">
+      <div class="section-container">
+        <div class="section-header-center">
+          <p class="section-label">Blog</p>
+          <h2 class="section-title-serif">Travel stories & tips</h2>
+          <p class="section-desc">Inspiration and practical guides for your next adventure.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card reveal-up">
+            <div class="blog-img">
+              <img src="images/kaziranga.png" alt="Kaziranga" loading="lazy"/>
+            </div>
+            <div class="blog-body">
+              <span class="blog-tag">Guide</span>
+              <h3>3 Days in Assam: Tea, Rhinos &amp; River Islands</h3>
+              <p>From Kaziranga safaris to Majuli's monasteries — an unforgettable Northeast itinerary.</p>
+              <span class="blog-date">Jun 12, 2025</span>
+            </div>
+          </article>
+          <article class="blog-card reveal-up">
+            <div class="blog-img">
+              <img src="images/northeast_hills.jpg" alt="Northeast Hills" loading="lazy"/>
+            </div>
+            <div class="blog-body">
+              <span class="blog-tag">Tips</span>
+              <h3>Best Time to Visit Northeast India — A Season Guide</h3>
+              <p>Monsoons, festivals, and wildlife seasons — plan your trip around what matters most.</p>
+              <span class="blog-date">May 28, 2025</span>
+            </div>
+          </article>
+          <article class="blog-card reveal-up">
+            <div class="blog-img">
+              <img src="images/brahmaputra_river.jpg" alt="Brahmaputra" loading="lazy"/>
+            </div>
+            <div class="blog-body">
+              <span class="blog-tag">Inspiration</span>
+              <h3>Hidden Gems: 10 Northeast India Spots Tourists Miss</h3>
+              <p>Skip the usual routes and discover Assam's best-kept secrets, from river islands to tea estates.</p>
+              <span class="blog-date">May 15, 2025</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter-glow"></div>
+      <div class="section-container relative">
+        <div class="newsletter-box">
+          <h2 class="section-title-serif">Stay in the loop</h2>
+          <p class="section-desc">Get travel tips, new features, and destination inspiration — straight to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="section-container">
+        <div class="section-header-center">
+          <p class="section-label">FAQ</p>
+          <h2 class="section-title-serif">Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What is Planora?</summary>
+            <p>Planora is a free travel planning and discovery app for iOS and Android. It helps you find the best places to visit, restaurants, hotels, tours and local gems across India on an interactive map, read genuine reviews, and stay connected on the go with travel eSIMs.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is Planora free to use?</summary>
+            <p>Yes. Planora is free to download and use on iOS and Android. Browsing places, reading reviews and using the map are completely free, with optional travel eSIM data plans available.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I list my business or place on Planora?</summary>
+            <p>Yes. Business owners can add and claim their place on Planora to reach travelers, manage their listing, respond to reviews, and appear on the map and in search.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does Planora sell travel eSIMs?</summary>
+            <p>Yes. Planora includes a travel eSIM store so you can buy affordable data plans and stay connected across India without swapping physical SIM cards.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What can I find on Planora?</summary>
+            <p>You can discover restaurants, cafes, hotels, attractions, tours, shopping, nature spots, entertainment and hidden local gems, complete with photos, ratings, reviews, opening hours and map directions.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-icon">✈</span>
+            <span class="logo-text">PLANORA</span>
+          </a>
+          <p>Planning made simple. Discover places, read reviews, plan trips, and stay connected with travel eSIMs.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#how-it-works">About</a>
+          <a href="#blog">Blog</a>
+          <a href="#newsletter">Contact</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Planora. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
